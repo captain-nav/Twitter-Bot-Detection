@@ -14,7 +14,6 @@ y = data['class_bot']
 # Split the data into training and testing sets (80% training, 20% testing)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
-# Create and train the SVM classifier
 svm_classifier = SVC(kernel='rbf', C=0.0035)
 svm_classifier.fit(X_train, y_train)
 
